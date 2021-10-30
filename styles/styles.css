@@ -1,0 +1,594 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --primary-color:#37989E;
+    --secondary-color:#F0C224;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+    margin: 1rem 0;
+}
+
+h1 {
+    font-size: 3.4rem;
+    margin: 2rem 0;
+}
+
+h2 {
+    font-size: 2.25rem;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.87rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+p {
+    font-weight: 300;
+    font-size: 1.25rem;
+    line-height: 1.4;
+}
+
+
+
+/* header */
+
+.header {
+    height: 100vh;
+    min-height: 550px;
+    max-width: 100%;
+    position: relative;
+    background: linear-gradient(177.19deg, #CBDFE0 2.84%, rgba(203, 223, 224, 0) 99.73%);
+}
+
+.hero-container {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    gap:20px;
+    max-width:100%;
+}
+
+.hero-desc {
+    max-width: 100%;
+    position: relative;
+    padding: 0 15px;
+}
+
+.hero-title {
+    max-width: 550px;
+}
+
+ 
+.hero-image {
+    position: relative;
+    height: auto;
+}
+
+.main-img {
+    position: relative;
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+}
+
+.main-img img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+.desc-header-feature {
+    margin: 0 0.5rem;
+    font-size: 0.9rem;
+}
+
+.desc-header-feature img{
+    max-width: 22px;
+    margin: 0 0.6rem;
+}
+
+.hero-minicards {
+    max-width: 165px;
+    padding: 0.3rem;
+    background-color: #fff;
+    position: absolute;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.minicard-one {
+    top: 25%;
+    left: 1%;
+    width: 170px;
+}
+
+.minicard-two {
+    position: absolute;
+    top: 130px;
+    right:0;
+}
+
+.hero-minicards p {
+    font-size: 0.79rem;
+    font-weight: 500;
+}
+
+.hero-minicards img {
+    display: block;
+    margin: 0 0.6rem;
+}
+
+/* Seccion de como pertencer */
+
+.belong {
+    background-image: url("/assets/vector_bg/Vector_bg_club_join.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 100%;
+}
+
+.belong h2 {
+    padding: 0 15px;
+}
+
+.belong-club {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: start;
+    gap:20px;
+    margin: 60px 0;
+    padding: 0 15px;
+    position: relative;
+}
+
+.belong-two .belong-desc {
+    order: -1;
+}
+
+.belong-illustration img {
+    max-width: 100%;
+    height: auto;
+}
+
+.belong-desc {
+    padding-top: 2.5rem;
+}
+
+.belong-club .number {
+    width: 60px;
+    height: 60px;
+    font-size: 3.8rem;
+    font-weight: 700;
+    background-color: var(--secondary-color);
+    text-align: center;
+    padding: 2.5rem;
+    border-radius: 50%;
+    position: absolute;
+    top:0;
+}
+
+.belong-three .belong-illustration {
+    position: relative;
+}
+.belong-three .number  {
+    right:0;
+}
+
+/* Sección de beneficios */
+
+.benefits {
+    background-image: url("/assets/vector_bg/beneficios_bg.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 100%;
+}
+
+.benefits-container {
+    display: grid;
+    gap: 20px;
+    padding: 70px 25px;
+    grid-template-columns: 3fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: start;
+    grid-template-areas:
+    "illustration  card-1 card-2"
+    "illustration  card-3 card-4" 
+    "illustration  card-5 card-6";
+}
+
+.benefit-illustration img{
+    max-width: 100%;
+    height: auto;
+
+}
+
+.benefit-card {
+    padding: 20px;
+    box-shadow: 10px 10px 15px -5px rgba(0, 0, 0, 0.25);
+    border-radius: 21.595px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.benefit-card img {
+    width: 60px;
+}
+
+.benefit-card h4 {
+    font-size: 1.3rem;
+}
+
+.benefit-card p {
+    font-size: 1.1rem;
+    line-height: 1.35;
+}
+
+
+.benefit-illustration {
+    grid-area: illustration;
+    align-self: center;
+}
+ 
+.benefit-card-1 {
+    grid-area: card-1;
+}
+
+.benefit-card-2 {
+    grid-area: card-2;
+}
+
+.benefit-card-3 {
+    grid-area: card-3;
+}
+
+.benefit-card-4 {
+    grid-area: card-4;
+}
+
+.benefit-card-5 {
+    grid-area: card-5;
+}
+
+.benefit-card-6 {
+    grid-area: card-6;
+}
+
+
+/* Seccion  de habilidades */
+
+.habilities {
+    height: auto;
+    max-width: 100%;
+    background-color: var(--primary-color);
+    color: #fff;
+    line-height: 1.5;
+}
+
+.habilities-container{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    place-items: center;
+    gap:20px
+}
+
+.habilities-desc {
+    text-align: center;
+}
+
+.habilities-desc hr{
+    width: 300px;
+    border: 3px solid #fff;
+}
+
+/* seccion de about */
+
+.about-me {
+    height: 100%;
+    width: 100%;
+    background-image: url("/assets/vector_bg/about_me_bg.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    margin: 80px 0;
+}
+
+.about-me-img img {
+    max-width: 100%;
+    height: auto
+}
+
+.about-me-container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 40px;
+}
+
+.about-me-desc {
+    width: 80%;
+}
+
+
+/* Sección del programa */
+
+.course-program {
+    justify-content: center;
+}
+
+.program-desc {
+    max-width: 600px;
+    text-align: center;
+    padding: 0 15px;
+}
+
+.accordion {
+    max-width: 850px;
+}
+
+.accordion-btn {
+    width: 100%;
+    min-height: 80px;
+    cursor: pointer;
+    text-align: left;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border: none;
+    outline: none;
+    padding: 20px 40px 20px 20px;
+    position: relative;
+    transition: 0.4s;
+}
+
+.accordion-btn::before {
+    content: "+";
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 1.8rem;
+}
+
+.accordion-btn:hover {
+    background-color: var(--primary-color);
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    overflow: hidden;
+    height: 0;
+    transition: height 0.7s ease;
+  }
+
+  .panel ul {
+      padding: 20px;
+  }
+
+  .sub-index {
+      list-style: none;
+  }
+
+  .index li {
+      padding: 10px 0
+  }
+
+  .active {
+      background-color: var(--primary-color);
+  }
+
+  .accordion-btn.active::before {
+    content: "-";
+  
+}
+
+/* seccion de plataforma */
+
+.plataform {
+    height: 100%;
+    width: 100%;
+    background-image: url("/assets/vector_bg/plataform_bg.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    margin: 80px 0;
+    padding: 0 15px;
+}
+
+.plataform-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    place-items: center;
+    gap:20px
+}
+
+.responsive-iframe {
+    aspect-ratio: 16/9 ;
+    max-width: 100%;
+    height: auto;
+}
+
+.plataform-features {
+    align-items: flex-start;
+}
+
+/* que necesitas */
+.requirement {
+    height: 100%;
+    width: 100%;
+    background-image: url("/assets/vector_bg/need_bg.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    margin: 80px 0;
+    padding: 0 15px;
+}
+
+.requirement-container  {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    place-items: center;
+    gap:20px
+}
+
+
+.requirement-desc {
+    align-items: flex-start;
+}
+
+.requirement-img img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* pricing */
+
+
+
+.pricing-table {
+    max-width: 450px;
+    width: 100%;
+    margin: 40px auto;
+    border-radius: 20px;
+    padding: 0 15px;
+
+
+}
+
+.price {
+    list-style-type: none;
+    border: 1px solid #eee;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+
+  }
+
+  .price:hover {
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+  }
+
+  .price .title {
+    background-color: var(--secondary-color);
+    color: white;
+    font-size: 25px;
+    padding: 40px;
+  }
+
+  .price li {
+    border-bottom: 1px solid #eee;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .price .grey {
+    background-color: #eee;
+    font-size: 20px;
+  }
+
+  .button {
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+  }
+
+  footer {
+      width: 100%;
+      padding: 20px;
+      background-color: rgb(29, 29, 29);
+      color: #fff;
+      text-align: center;
+  }
+
+  /* media queries */
+
+@media only screen and (max-width: 920px)  {
+
+    .container {
+        padding: 20px 0;
+    }
+   
+    .header {
+        height: auto;
+    }
+   
+    .hero-container, .about-me-container,.requirement-container,.plataform-container,.habilities-container {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .plataform-features, .about-me-desc,.requirement-desc {
+        order: -1;
+    }
+
+   
+
+    .benefits-container {
+        padding: 70px 25px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        justify-items: center;
+        align-items: start;
+        grid-template-areas:
+        "illustration illustration"
+        "card-1       card-2"
+        "card-3       card-4" 
+        "card-5       card-6";
+    }
+}
+
+@media only screen and (max-width: 590px) {
+
+   
+    .header-feature, .hero-minicards {
+        display: none;
+    }
+
+    .belong-club  {
+        grid-template-columns: 1fr;
+    }
+
+    .about-me,.plataform, .requirement {
+        margin: 20px 0;
+    }
+
+    .about-me-desc {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .belong-two .belong-desc {
+        order: 1;
+    }
+
+    .benefits-container {
+        display: flex;
+        flex-direction: column;
+    }   
+
+    
+}
