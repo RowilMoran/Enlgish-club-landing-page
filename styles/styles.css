@@ -1,12 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+/* @link https://utopia.fyi/type/calculator?c=320,21,1.2,1140,24,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l */
 
 :root {
+    --step--2: clamp(0.91rem, 0.89rem + 0.10vw, 0.96rem);
+    --step--1: clamp(1.09rem, 1.05rem + 0.21vw, 1.20rem);
+    --step-0: clamp(1.31rem, 1.24rem + 0.37vw, 1.50rem);
+    --step-1: clamp(1.58rem, 1.46rem + 0.59vw, 1.88rem);
+    --step-2: clamp(1.89rem, 1.71rem + 0.89vw, 2.34rem);
+    --step-3: clamp(2.27rem, 2.01rem + 1.29vw, 2.93rem);
+    --step-4: clamp(2.72rem, 2.36rem + 1.83vw, 3.66rem);
+    --step-5: clamp(3.27rem, 2.75rem + 2.56vw, 4.58rem);
     --primary-color:#37989E;
     --secondary-color:#F0C224;
-}
+  }
+
 
 body {
     font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
 }
 
 h1, h2, h3 {
@@ -15,27 +26,27 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: 3.4rem;
+    font-size: var(--step-4);
     margin: 2rem 0;
 }
 
 h2 {
-    font-size: 2.25rem;
+    font-size: var(--step-2);
     text-align: center;
 }
 
 h3 {
-    font-size: 1.87rem;
+    font-size: var(--step-1);
 }
 
 h4 {
-    font-size: 1.5rem;
+    font-size: var(--step-1);
     font-weight: 500;
 }
 
 p {
     font-weight: 300;
-    font-size: 1.25rem;
+    font-size: var(--step--1);
     line-height: 1.4;
 }
 
@@ -88,16 +99,20 @@ p {
     height: auto;
 }
 
-
+.header-feature  {
+    max-width: 600px;
+    margin: 0 auto;
+    width: 100%;
+}
 
 .desc-header-feature {
-    margin: 0 0.5rem;
+    margin: 15px 0.1rem;
     font-size: 0.9rem;
 }
 
 .desc-header-feature img{
     max-width: 22px;
-    margin: 0 0.6rem;
+
 }
 
 .hero-minicards {
@@ -128,7 +143,7 @@ p {
 
 .hero-minicards img {
     display: block;
-    margin: 0 0.6rem;
+/*     margin: 0 0.6rem; */
 }
 
 /* Seccion de como pertencer */
@@ -506,6 +521,12 @@ p {
     font-size: 20px;
   }
 
+  .cost{
+      font-size: 4rem;
+      font-weight: 700;
+      color: var(--primary-color);
+  }
+
   .button {
     background-color: #04AA6D;
     border: none;
@@ -522,6 +543,32 @@ p {
       background-color: rgb(29, 29, 29);
       color: #fff;
       text-align: center;
+  }
+
+  /* whatsap button */
+
+  .whatsapp {
+      
+      background-color: #fff;
+      -webkit-box-shadow: 5px 7px 19px -6px #000000; 
+      box-shadow: 5px 7px 19px -6px #000000;
+      text-decoration: none;
+      color: #000;
+      font-size: 1.1rem;
+      font-weight: 700;
+      cursor: pointer;
+      max-width: 170px;
+      position: fixed;
+      bottom: 5vh;
+      right: 5vh;
+      padding-right: 10px;
+      border-radius: 10px;
+      transform: translateX(200px);
+      transition: 1s ease-out ;
+  }
+
+  .appear {
+    transform: translateX(0); 
   }
 
   /* media queries */
@@ -563,9 +610,18 @@ p {
 
 @media only screen and (max-width: 590px) {
 
-   
-    .header-feature, .hero-minicards {
+    .hero-minicards {
         display: none;
+    }
+
+    .desc-header-feature {
+        margin: 15px 0;
+        font-size: 0.8rem;
+    }
+
+    .desc-header-feature img{
+        max-width: 18px;
+    
     }
 
     .belong-club  {
