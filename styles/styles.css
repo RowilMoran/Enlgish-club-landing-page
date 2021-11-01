@@ -564,10 +564,12 @@ p {
       padding-right: 10px;
       border-radius: 10px;
       transform: translateX(200px);
-      transition: 1s ease-out ;
+      opacity: 0;
+      transition: transform 1s ease-in,  opacity 1s ease-in;
   }
 
-  .appear {
+  .whatsapp.appear {
+      opacity: 1;
     transform: translateX(0); 
   }
 
