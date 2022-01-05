@@ -456,6 +456,7 @@ p {
 }
 .testimony-container {
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .testimonios img {
