@@ -450,6 +450,25 @@ p {
     align-items: flex-start;
 }
 
+/* testimony */
+.testimonios h2{
+    text-align: center;
+}
+.testimony-container {
+    justify-content: space-around;
+}
+
+.testimonios img {
+    display: block;
+    max-width: 380px;
+    width: 100%;
+    box-shadow: 6px 11px 47px -18px rgba(0,0,0,0.75);
+}
+
+.testimonios figure {
+    padding: 10px;
+}
+
 /* que necesitas */
 .requirement {
     height: 100%;
