@@ -676,7 +676,11 @@ p {
     .benefits-container {
         display: flex;
         flex-direction: column;
-    }   
+    } 
+    
+    .requirement-img, .benefit-illustration {
+        display: none;
+    }
 
     
 }
