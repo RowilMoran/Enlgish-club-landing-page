@@ -4,6 +4,6 @@
 
 Html, Native CSS (flexbox, Grid) and Vanilla Js were used to create this site. 
 
-See it live: https://loving-jang-7d7376.netlify.app
+See it live: https://club-de-ingles-damarys.netlify.app/
 
 Contact me if you want the figma File if you like the design.
